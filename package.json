@@ -1,0 +1,30 @@
+{
+  "name": "sauce-demo-playwright",
+  "version": "1.0.0",
+  "description": "Demo Playwright + TypeScript test suite for the Sauce Demo Shopify store (https://sauce-demo.myshopify.com/).",
+  "private": true,
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "bddgen && playwright test",
+    "test:headed": "bddgen && playwright test --headed",
+    "test:ui": "bddgen && playwright test --ui",
+    "test:chromium": "bddgen && playwright test --project=chromium",
+    "test:firefox": "bddgen && playwright test --project=firefox",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://sauce-demo.myshopify.com/"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "e2e",
+    "shopify",
+    "demo"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1",
+    "playwright-bdd": "^9.2.0",
+    "typescript": "^6.0.3"
+  }
+}
